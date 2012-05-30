@@ -1,0 +1,2 @@
+serviceClass: com.Exam.client.MyWebService
+path: 8F02D77681E6BCC196BA285CFA5412D6.gwt.rpc

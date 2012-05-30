@@ -1,0 +1,2 @@
+serviceClass: com.MyWeb.client.MyWebService
+path: AB441B4BFF68B9BE1BD787652EF97635.gwt.rpc

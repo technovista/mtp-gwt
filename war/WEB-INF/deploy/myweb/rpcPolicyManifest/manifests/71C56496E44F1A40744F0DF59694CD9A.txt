@@ -1,0 +1,2 @@
+serviceClass: com.Exam.client.ExamService
+path: F1D45DCC825DBE21F8520AEA5F7DA26E.gwt.rpc

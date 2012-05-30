@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="Libs/antlr.jar"/>
+	<classpathentry kind="lib" path="Libs/asm.jar"/>
+	<classpathentry kind="lib" path="Libs/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="Libs/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="Libs/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="Libs/dom4j-full.jar"/>
+	<classpathentry kind="lib" path="Libs/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="Libs/hibernate3.jar"/>
+	<classpathentry kind="lib" path="Libs/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="Libs/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="Libs/hibernate-core-3.3.1.GA.jar"/>
+	<classpathentry kind="lib" path="Libs/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="Libs/log4j.jar"/>
+	<classpathentry kind="lib" path="Libs/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="Libs/slf4j-log4j12-1.0-rc1.jar"/>
+	<classpathentry kind="lib" path="Libs/spring-2.5.6.jar"/>
+	<classpathentry kind="con" path="com.soyatec.uml.CONTAINER"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

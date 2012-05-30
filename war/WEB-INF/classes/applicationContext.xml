@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-lazy-init="true">
+
+	<!-- Datasource for LOCAL database connection -->
+	
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://dbmysql200.my-hosting-panel.com:3306/jrrohit_testperp" />
+		<property name="username" value="jrroh_testprep" />
+		<property name="password" value="Techno123" />
+	</bean>
+<!--  
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="url">
+	 	<value>jdbc:mysql://127.0.0.1:3306/testperp</value> 
+		</property>
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>12345</value>
+		</property>
+	</bean>
+	 -->	
+<!-- 		<value>jdbc:mysql://97.74.92.128:3306/techno1</value> 
+ 		<value>jdbc:mysql://mochahost:3306/jrrohit_testperp</value> 
+		</property>
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="username">
+			<value>jrroh_testprep</value>
+		</property>
+		<property name="password">
+			<value>Techno123</value>
+		</property>
+	</bean> -->
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.pos.shared.User</value>
+				<value>com.Exam.shared.Test</value>
+				<value>com.Exam.shared.TestObjective</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="ManagerExams" class="pos.database.MySQLRdbHelper">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+</beans>
+
