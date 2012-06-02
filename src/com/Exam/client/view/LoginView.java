@@ -174,7 +174,7 @@ public class LoginView extends Composite implements Display {
 		flexTable.setWidget(5, 1, button);
 		button.setWidth("129px");
 		
-		hprlnkNewHyperlink = new Hyperlink("Register for an account", false, "createAccount");
+		hprlnkNewHyperlink = new Hyperlink("Register for an account!", false, "createAccount");
 		flexTable.setWidget(6, 1, hprlnkNewHyperlink);
 		
 		hprlnkNewHyperlink_1 = new Hyperlink("Forgot Password", false, "forgotPassword");
